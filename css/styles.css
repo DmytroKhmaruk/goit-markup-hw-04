@@ -92,8 +92,6 @@ body {
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
-
-    outline: 1px solid red;
 }
 
 /* -------------HEADER---------------- */
@@ -119,13 +117,6 @@ body {
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-}
-
-.footer-logo {
-    display: inline-block;
-    margin-bottom: 20px;
-
-    color: var(--primary-white-color);
 }
 
 .accent {
@@ -182,41 +173,6 @@ body {
 }
 
 
-
-.footer .link {
-    color: rgba(255, 255, 255, 0.6);
-    font-weight: 500;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-}
-
-.link:hover,
-.link:focus {
-    color: var(--accent-color);
-} 
-
-.footer {   
-    padding-top: 60px;
-    padding-bottom: 60px;
-
-    background-color: var(--primary-black-color);
-}
-
-.footer-link {
-    margin-bottom: 9px;
-
-    font-style: normal;
-}
-
-.footer-link:last-child{
-    margin-bottom: 0;
-}
-
-.address-link {
-    color: var(--primary-white-color);
-    font-style: normal;
-}
-
 /*перша сторінка (унікальний контент)*/
 /*-------------hero-------------*/
 .hero {
@@ -237,10 +193,7 @@ body {
     background-position: center;
     background-size: cover;
     
-
     text-align: center;
-
-        outline: 1px solid red;
 }
 
 .hero-title {
@@ -383,7 +336,7 @@ body {
 }
 
 .team-soc-item {
-    width: 44px;
+    min-width: 44px;
     height: 44px;
 }
 
@@ -448,19 +401,78 @@ body {
     color: var(--accent-color);
 }
 
-.footer-soc-list {
+
+.footer {   
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    background-color: var(--primary-black-color);
+}
+
+.content {
     display: flex;
-    justify-content: center;
+    align-items: baseline;
+    gap: 70px;
+}
+
+.address-container {
+    width: 231px;
+
+}
+
+.footer-logo {
+    display: inline-block;
+    margin-bottom: 20px;
+
+    color: var(--primary-white-color);
+}
+
+.address-link {
+    color: var(--primary-white-color);
+    font-style: normal;
+}
+
+.footer .link {
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+.footer-link {
+    margin-bottom: 9px;
+
+    font-style: normal;
+}
+
+.footer-link:last-child{
+    margin-bottom: 0;
+}
+
+.link:hover,
+.link:focus {
+    color: var(--accent-color);
+} 
+
+.soc-container{
+    max-width: 201px;
 }
 
 .footer-soc-title {
     display: flex;
+    margin-bottom: 20px;
+
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.03em;
     color: var(--primary-white-color);
     text-transform: uppercase;
 
+}
+
+.footer-soc-list {
+    display: flex;
+    justify-content: center;
 }
 
 .footer-soc-link {
